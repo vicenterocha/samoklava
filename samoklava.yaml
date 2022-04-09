@@ -32,8 +32,13 @@ points:
       #   rotate: 5
       key.padding: ky
       columns:
-        pinky:
+        outter:
           stagger: 0 ky
+          spread: kx
+          key:
+            column_net: P21
+        pinky:
+          stagger: 0.1 ky
           spread: kx
           key:
             column_net: P20
@@ -67,7 +72,7 @@ points:
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
-        shift: [-1.5 kx, -1 ky]
+        shift: [-3 kx, -1 ky]
       columns:
         near:
           spread: kx
@@ -431,7 +436,7 @@ pcbs:
             - matrix_pinky_bottom
           shift: [0.75 kx, 0]
         params:
-          text: "samoklava v0.1\\nby soundmonster"
+          text: "wake v0.1"
           justify: left
       info_r:
         type: text
@@ -441,6 +446,7 @@ pcbs:
           shift: [0.75 kx, 0]
         params:
           layer: B.SilkS
-          text: "samoklava v0.1\\nby soundmonster"
+          text: "wake v0.1"
           justify: right mirror
+
 
