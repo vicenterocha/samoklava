@@ -443,5 +443,30 @@ pcbs:
           layer: B.SilkS
           text: "wake v0.1"
           justify: right mirror
-
-
+      scrollwheel:
+        type: scrollwheel
+        anchor:
+          ref: matrix_index_bottom
+          shift: [ -3, -20 ]
+          rotate: -90
+        nets:
+          from: P21
+          to: enc_diode
+          A: P8
+          B: P9
+          C: GND
+          D: ''
+        params:
+          reverse: true
+      encoderdiode:
+        type: diode
+        anchor:
+          ref: thumbfan_near_thumb
+          rotate: 90
+          shift: [ -8.25, 0 ]
+        nets:
+          from: enc_diode
+          to: P7
+        params:
+          via_in_pad: true
+          through_hole: false
