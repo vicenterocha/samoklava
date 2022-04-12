@@ -471,10 +471,9 @@ pcbs:
         anchor:
           ref: 
             - matrix_inner_bottom
-          shift: [ 1.3 kx , -1.5 ky ]
+          shift: [ 1.3 kx , -1.4 ky ]
         nets:
           from: enc_diode
           to: P7
         params:
           via_in_pad: true
-          through_hole: false
