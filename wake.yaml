@@ -107,15 +107,15 @@ outlines:
       - type: polygon
         points:
           - ref: matrix_inner_bottom
-            shift: [0.5 kx + 0.5px, -0.5 ky + 1 py]
+            shift: [0.5 kx + 0.5px, -0.5 ky + 20 py]
           - ref: thumbfan_far_thumb
-            shift: [0.5 kx - 0.5px, 0.5 ky + 1 py]
+            shift: [0.5 kx - 0.5px, 0.5 ky + 5 py]
           - ref: thumbfan_far_thumb
-            shift: [0.5 kx - 0.5px, -0.5 ky -1 py]
+            shift: [0.5 kx - 0.5px, -0.5 ky -0.5 py]
           - ref: thumbfan_near_thumb
-            shift: [-0.5 kx + 0.5 px, -0.5 ky - 1 py]
+            shift: [-0.5 kx + 0.5 px, -0.5 ky -1 py]
           - ref: matrix_pinky_bottom
-            shift: [0.5 kx - 0.5 py, -0.5 ky - 1 py]
+            shift: [0.5 kx - 0.5 py, -0.5 ky -1 py]
           - ref: matrix_pinky_home
           - ref: matrix_inner_home
     patch_outer:
@@ -131,11 +131,13 @@ outlines:
       - type: polygon
         points:
           - ref: matrix_inner_top
-            shift: [0.5 (kx + px), 0]
+            shift: [2 (kx + px), 5]
           - ref: matrix_inner_bottom
-            shift: [0.5 (kx + px), 0]
+            shift: [2 (kx + px), -15]
           - ref: matrix_index_bottom
+            shift: [-2 (kx + px), -20]
           - ref: matrix_index_top
+            shift: [-2 (kx + px), -1]
     controller_area:
       main:
         type: rectangle
@@ -451,7 +453,8 @@ pcbs:
       rotary:
         type: rotary
         anchor:
-          ref: matrix_index_bottom
+          ref: 
+            - matrix_index_bottom
           shift: [ -3, -20 ]
           rotate: -90
         nets:
@@ -466,7 +469,8 @@ pcbs:
       encoderdiode:
         type: diode
         anchor:
-          ref: thumbfan_near_thumb
+          ref: 
+            - matrix_index_bottom
           rotate: 90
           shift: [ -8.25, 0 ]
         nets:
