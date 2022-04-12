@@ -455,7 +455,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [30, -20]
+          shift: [30, -18]
           rotate: -90
         nets:
           from: P16
@@ -471,7 +471,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [30, -25]
+          shift: [30, -20]
         nets:
           from: enc_diode
           to: P7
