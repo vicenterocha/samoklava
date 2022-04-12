@@ -471,7 +471,7 @@ pcbs:
         anchor:
           ref: 
             - matrix_inner_bottom
-          shift: [ 1.2 kx , -1.5 ky ]
+          shift: [ 1.2 kx , -1.4 ky ]
         nets:
           from: enc_diode
           to: P7
