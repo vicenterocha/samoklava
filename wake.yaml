@@ -107,15 +107,15 @@ outlines:
       - type: polygon
         points:
           - ref: matrix_inner_bottom
-            shift: [0.5 kx + 0.5px, -0.5 ky + 0.5 py]
+            shift: [0.5 kx + 0.5px, -0.5 ky + 1 py]
           - ref: thumbfan_far_thumb
-            shift: [0.5 kx - 0.5px, 0.5 ky + 0.5 py]
+            shift: [0.5 kx - 0.5px, 0.5 ky + 1 py]
           - ref: thumbfan_far_thumb
-            shift: [0.5 kx - 0.5px, -0.5 ky - 0.5 py]
+            shift: [0.5 kx - 0.5px, -0.5 ky -1 py]
           - ref: thumbfan_near_thumb
-            shift: [-0.5 kx + 0.5 px, -0.5 ky - 0.5 py]
+            shift: [-0.5 kx + 0.5 px, -0.5 ky - 1 py]
           - ref: matrix_pinky_bottom
-            shift: [0.5 kx - 0.5 py, -0.5 ky - 0.5 py]
+            shift: [0.5 kx - 0.5 py, -0.5 ky - 1 py]
           - ref: matrix_pinky_home
           - ref: matrix_inner_home
     patch_outer:
@@ -272,7 +272,7 @@ pcbs:
             - matrix_ring_home
           shift: [-0.25 kx, 0.5 ky]
         params:
-          text: "VCRVCRVCRVCR"
+          text: "JLCJLCJLCJLC"
           justify: left
   bottom_plate:
     include_keys: false
@@ -448,4 +448,30 @@ pcbs:
           layer: B.SilkS
           text: "wake v0.1"
           justify: right mirror
-
+      rotary:
+        type: rotary
+        anchor:
+          ref: matrix_index_bottom
+          shift: [ -3, -20 ]
+          rotate: -90
+        nets:
+          from: P16
+          to: enc_diode
+          A: P8
+          B: P9
+          C: GND
+          D: ''
+        params:
+          reverse: true
+      encoderdiode:
+        type: diode
+        anchor:
+          ref: thumbfan_near_thumb
+          rotate: 90
+          shift: [ -8.25, 0 ]
+        nets:
+          from: enc_diode
+          to: P7
+        params:
+          via_in_pad: true
+          through_hole: false
