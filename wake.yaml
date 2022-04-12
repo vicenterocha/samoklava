@@ -272,7 +272,7 @@ pcbs:
             - matrix_ring_home
           shift: [-0.25 kx, 0.5 ky]
         params:
-          text: "JLCJLCJLCJLC"
+          text: "VCRVCRVCRVCR"
           justify: left
   bottom_plate:
     include_keys: false
