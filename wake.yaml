@@ -453,9 +453,9 @@ pcbs:
       rotary:
         type: rotary
         anchor:
-          ref: 
+          ref:
             - matrix_inner_bottom
-          shift: [ 1.3 kx, -1.4 ky ]
+          shift: [30, -20]
           rotate: -90
         nets:
           from: P16
@@ -469,9 +469,9 @@ pcbs:
       encoderdiode:
         type: diode
         anchor:
-          ref: 
+          ref:
             - matrix_inner_bottom
-          shift: [ 1.3 kx , -1.4 ky ]
+          shift: [30, -25]
         nets:
           from: enc_diode
           to: P7
