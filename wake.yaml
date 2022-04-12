@@ -131,11 +131,11 @@ outlines:
       - type: polygon
         points:
           - ref: matrix_inner_top
-            shift: [1.3 (kx + px), 0]
+            shift: [1.6 (kx + px), 0]
           - ref: matrix_inner_bottom
-            shift: [1.3 (kx + px), -40]
+            shift: [1.6 (kx + px), -40]
           - ref: matrix_index_bottom
-            shift: [1.3 (kx + px), -40]
+            shift: [1 (kx + px), -45]
           - ref: matrix_index_top
             shift: [1.3 (kx + px), 5]
     controller_area:
