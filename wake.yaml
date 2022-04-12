@@ -133,9 +133,11 @@ outlines:
           - ref: matrix_inner_top
             shift: [1.3 (kx + px), 0]
           - ref: matrix_inner_bottom
-            shift: [1.3 (kx + px), -15]
+            shift: [1.3 (kx + px), -40]
           - ref: matrix_index_bottom
+            shift: [1.3 (kx + px), -40]
           - ref: matrix_index_top
+            shift: [1.3 (kx + px), 5]
     controller_area:
       main:
         type: rectangle
@@ -452,7 +454,7 @@ pcbs:
         type: rotary
         anchor:
           ref: 
-            - matrix_index_bottom
+            - matrix_inner_bottom
           shift: [ -3, -20 ]
           rotate: -90
         nets:
@@ -468,7 +470,7 @@ pcbs:
         type: diode
         anchor:
           ref: 
-            - matrix_index_bottom
+            - matrix_inner_bottom
           shift: [ -8.25, 0 ]
           rotate: 90
         nets:
