@@ -83,7 +83,7 @@ points:
         home:
           spread: kx
           rotate: -5
-          origin: [-0.5 kx, -1.5 ky]
+          origin: [-0.4 kx, -1.4 ky]
           key:
             column_net: P15
         far:
@@ -331,7 +331,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [32, -18]
+          shift: [32, -13]
           rotate: 270
         params:
           reverse: false
@@ -423,7 +423,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [22, -33]
+          shift: [22, -31]
           rotate: -90
         nets:
           from: P16
