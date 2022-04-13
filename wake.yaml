@@ -454,6 +454,6 @@ pcbs:
           shift: [22, 2]
         nets:
           SDA: P10
-          SLC: P11
+          SCL: P11
           VCC: VCC
           GND: GND
