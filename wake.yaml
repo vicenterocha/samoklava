@@ -331,7 +331,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [32, -15]
+          shift: [32, -18]
           rotate: 270
         params:
           reverse: false
@@ -347,7 +347,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [32, -13]
+          shift: [32, -11]
           rotate: 270
         params:
           reverse: true
@@ -363,7 +363,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [23.5, 0]
+          shift: [23.5, -4]
           rotate: 270
         params:
           side: B
@@ -375,7 +375,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [23.5, 0]
+          shift: [23.5, -4]
           rotate: 270
         params:
           side: F
@@ -387,7 +387,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [30, 0]
+          shift: [30, -4]
           rotate: 270
         params:
           side: F
@@ -399,7 +399,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [30, 0]
+          shift: [30, -4]
           rotate: 270
         params:
           side: B
@@ -411,7 +411,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [17, 0]
+          shift: [15, -4]
           rotate: 270
         params:
           variant: 2_pin_th
@@ -423,7 +423,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [22, -29]
+          shift: [22, -31]
           rotate: -90
         nets:
           from: P16
@@ -439,7 +439,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [10, -29]
+          shift: [12, -21]
           rotate: -90
         nets:
           from: enc_diode
