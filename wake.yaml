@@ -331,7 +331,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [32, -13]
+          shift: [32, -15]
           rotate: 270
         params:
           reverse: false
@@ -347,7 +347,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [32, -11]
+          shift: [32, -13]
           rotate: 270
         params:
           reverse: true
@@ -423,7 +423,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [22, -31]
+          shift: [22, -29]
           rotate: -90
         nets:
           from: P16
