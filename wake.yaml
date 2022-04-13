@@ -260,24 +260,11 @@ outlines:
         operation: subtract
 pcbs:
   top_plate:
-    # include JLCJLCJLCJLC text somewhere
-    include_keys: false
     outlines:
       edge:
         outline: plate
         layer: Edge.Cuts
-    footprints:
-      jlc_order_number:
-        type: text
-        anchor:
-          ref:
-            - matrix_ring_home
-          shift: [-0.25 kx, 0.5 ky]
-        params:
-          text: "JLCJLCJLCJLC"
-          justify: left
   bottom_plate:
-    include_keys: false
     outlines:
       edge:
         outline: bottom_outline
@@ -431,32 +418,13 @@ pcbs:
         nets:
           from: GND
           to: RST
-      info_l:
-        type: text
-        anchor:
-          ref:
-            - matrix_pinky_bottom
-          shift: [0.75 kx, 0]
-        params:
-          text: "wake v0.1"
-          justify: left
-      info_r:
-        type: text
-        anchor:
-          ref:
-            - matrix_pinky_bottom
-          shift: [0.75 kx, 0]
-        params:
-          layer: B.SilkS
-          text: "wake v0.1"
-          justify: right mirror
       rotary:
         type: rotary
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [17, -25]
-          rotate: -90
+          shift: [22, -29]
+          rotate: 0
         nets:
           from: P16
           to: enc_diode
@@ -471,7 +439,8 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [17, -25]
+          shift: [10, -29]
+          rotate: -90
         nets:
           from: enc_diode
           to: P7
