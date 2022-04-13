@@ -5793,3 +5793,49 @@
 2022-04-13 17:59:15.464 [Thread-48] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 36.05 seconds.
 2022-04-13 17:59:58.814 [AWT-EventQueue-0] INFO  Saving 'board.ses'...
 2022-04-13 18:00:00.505 [AWT-EventQueue-0] INFO  Saving 'board.rules'...
+2022-04-13 23:01:48.618 [AWT-EventQueue-0] INFO  Opening 'board.dsn'...
+2022-04-13 23:01:49.494 [AWT-EventQueue-0] INFO  Opening 'board.rules'...
+2022-04-13 23:01:52.458 [Thread-63] INFO  Starting auto-routing...
+2022-04-13 23:01:58.998 [Thread-63] TRACE Method 'BatchAutorouter.autoroute_pass #6 on board '5efe38d99cac2b1e13e8f9b392d3f864' making 406 changes' was performed in 6.51 seconds.
+2022-04-13 23:02:05.433 [Thread-63] TRACE Method 'BatchAutorouter.autoroute_pass #7 on board 'b8762b8b84a899a0bd78d3ee04f418b5' making 9 changes' was performed in 6.42 seconds.
+2022-04-13 23:02:12.152 [Thread-63] TRACE Method 'BatchAutorouter.autoroute_pass #8 on board '60ae8d317a34f224ea892f18e4caf5b1' making 0 changes' was performed in 6.71 seconds.
+2022-04-13 23:02:12.156 [Thread-63] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 19.70 seconds.
+2022-04-13 23:02:12.156 [Thread-63] INFO  Auto-routing was completed in 19.70 seconds.
+2022-04-13 23:02:12.156 [Thread-63] INFO  Starting route optimization on 7 threads...
+2022-04-13 23:02:13.789 [Thread-63] TRACE Method 'BatchOptRouteMT.opt_route_pass #1 with 0 items, 52 vias and 3,113,864.51 trace length running on 7 threads.' was performed in 1.63 seconds.
+2022-04-13 23:02:15.525 [Thread-63] TRACE Method 'BatchOptRouteMT.opt_route_pass #2 with 246 items, 52 vias and 3,113,864.51 trace length running on 7 threads.' was performed in 1.73 seconds.
+2022-04-13 23:02:15.526 [Thread-63] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 3.37 seconds.
+2022-04-13 23:02:15.527 [Thread-63] INFO  Route optimization was completed in 3.37 seconds.
+2022-04-13 23:02:15.567 [Thread-63] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 23.11 seconds.
+2022-04-13 23:02:36.847 [Thread-78] INFO  Starting auto-routing...
+2022-04-13 23:02:43.041 [Thread-78] TRACE Method 'BatchAutorouter.autoroute_pass #9 on board '6fcc9a503829c82162f654787cea0b48' making 0 changes' was performed in 6.18 seconds.
+2022-04-13 23:02:43.044 [Thread-78] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 6.20 seconds.
+2022-04-13 23:02:43.045 [Thread-78] INFO  Auto-routing was completed in 6.20 seconds.
+2022-04-13 23:02:43.046 [Thread-78] INFO  Starting route optimization on 7 threads...
+2022-04-13 23:02:44.654 [Thread-78] TRACE Method 'BatchOptRouteMT.opt_route_pass #1 with 0 items, 52 vias and 3,113,864.51 trace length running on 7 threads.' was performed in 1.61 seconds.
+2022-04-13 23:02:46.243 [Thread-78] TRACE Method 'BatchOptRouteMT.opt_route_pass #2 with 246 items, 52 vias and 3,113,864.51 trace length running on 7 threads.' was performed in 1.59 seconds.
+2022-04-13 23:02:46.244 [Thread-78] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 3.20 seconds.
+2022-04-13 23:02:46.244 [Thread-78] INFO  Route optimization was completed in 3.20 seconds.
+2022-04-13 23:02:46.252 [Thread-78] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 9.40 seconds.
+2022-04-13 23:03:22.364 [Thread-93] INFO  Starting auto-routing...
+2022-04-13 23:03:26.876 [Thread-93] TRACE Method 'BatchAutorouter.autoroute_pass #10 on board '28378d351d64750cb33ff4c64542d569' making 0 changes' was performed in 4.49 seconds.
+2022-04-13 23:03:26.880 [Thread-93] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 4.51 seconds.
+2022-04-13 23:03:26.880 [Thread-93] INFO  Auto-routing was completed in 4.51 seconds.
+2022-04-13 23:03:26.881 [Thread-93] INFO  Starting route optimization on 7 threads...
+2022-04-13 23:03:28.637 [Thread-93] TRACE Method 'BatchOptRouteMT.opt_route_pass #1 with 0 items, 52 vias and 3,127,925.58 trace length running on 7 threads.' was performed in 1.76 seconds.
+2022-04-13 23:03:30.265 [Thread-93] TRACE Method 'BatchOptRouteMT.opt_route_pass #2 with 248 items, 52 vias and 3,127,925.58 trace length running on 7 threads.' was performed in 1.63 seconds.
+2022-04-13 23:03:30.266 [Thread-93] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 3.38 seconds.
+2022-04-13 23:03:30.267 [Thread-93] INFO  Route optimization was completed in 3.38 seconds.
+2022-04-13 23:03:30.350 [Thread-93] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 7.99 seconds.
+2022-04-13 23:04:16.729 [Thread-108] INFO  Starting auto-routing...
+2022-04-13 23:04:18.899 [Thread-108] TRACE Method 'BatchAutorouter.autoroute_pass #11 on board 'a176fcc532dec044bcd86ffeb365fff2' making 0 changes' was performed in 2.15 seconds.
+2022-04-13 23:04:18.902 [Thread-108] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 2.17 seconds.
+2022-04-13 23:04:18.903 [Thread-108] INFO  Auto-routing was completed in 2.17 seconds.
+2022-04-13 23:04:18.903 [Thread-108] INFO  Starting route optimization on 7 threads...
+2022-04-13 23:04:20.510 [Thread-108] TRACE Method 'BatchOptRouteMT.opt_route_pass #1 with 0 items, 52 vias and 3,153,720.72 trace length running on 7 threads.' was performed in 1.60 seconds.
+2022-04-13 23:04:22.111 [Thread-108] TRACE Method 'BatchOptRouteMT.opt_route_pass #2 with 251 items, 52 vias and 3,153,720.72 trace length running on 7 threads.' was performed in 1.60 seconds.
+2022-04-13 23:04:22.112 [Thread-108] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 3.21 seconds.
+2022-04-13 23:04:22.113 [Thread-108] INFO  Route optimization was completed in 3.21 seconds.
+2022-04-13 23:04:22.123 [Thread-108] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 5.39 seconds.
+2022-04-13 23:04:26.203 [AWT-EventQueue-0] INFO  Saving 'board.ses'...
+2022-04-13 23:04:29.789 [AWT-EventQueue-0] INFO  Saving 'board.rules'...
