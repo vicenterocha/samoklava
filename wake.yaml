@@ -207,7 +207,7 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_index_bottom
-            shift: [0, -0.9 ky]
+            shift: [0, -0.7 ky]
         radius: 1.05
       thumb:
         type: circle
@@ -423,7 +423,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [22, -31]
+          shift: [22, -33]
           rotate: -90
         nets:
           from: P16
@@ -439,7 +439,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [12, -21]
+          shift: [12, -17]
           rotate: -90
         nets:
           from: enc_diode
