@@ -453,11 +453,7 @@ pcbs:
             - matrix_inner_bottom
           shift: [22, 2]
         nets:
-          from: P16
-          to: enc_diode
           SDA: P10
           SLC: P11
           VCC: VCC
           GND: GND
-        params:
-          reverse: true
