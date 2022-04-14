@@ -451,22 +451,22 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [28, 3.3]
+          shift: [15, 4]
           rotate: -90
         nets:
           SDA: P10
           SCL: P1
           VCC: VCC
           GND: GND
-      oled_r:
-        type: oled
-        anchor:
-          ref:
-            - matrix_inner_bottom
-          shift: [16, 3.5]
-          rotate: -270
-        nets:
-          SDA: P10
-          SCL: P1
-          VCC: VCC
-          GND: GND
+      # oled_r:
+      #   type: oled
+      #   anchor:
+      #     ref:
+      #       - matrix_inner_bottom
+      #     shift: [16, 3.5]
+      #     rotate: -270
+      #   nets:
+      #     SDA: P10
+      #     SCL: P1
+      #     VCC: VCC
+      #     GND: GND
