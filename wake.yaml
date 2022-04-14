@@ -446,12 +446,25 @@ pcbs:
           to: P6
         params:
           via_in_pad: true
-      oled:
+      oled_l:
         type: oled
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [22, 2]
+          shift: [28, 3.3]
+          rotate: -90
+        nets:
+          SDA: P10
+          SCL: P11
+          VCC: VCC
+          GND: GND
+      oled_r:
+        type: oled
+        anchor:
+          ref:
+            - matrix_inner_bottom
+          shift: [16, 3.5]
+          rotate: -270
         nets:
           SDA: P10
           SCL: P11
