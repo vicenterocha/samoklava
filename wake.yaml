@@ -451,7 +451,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [15, 4]
+          shift: [15, 3.5]
           rotate: 90
         nets:
           SDA: P10
