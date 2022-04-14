@@ -455,7 +455,7 @@ pcbs:
           rotate: -90
         nets:
           SDA: P10
-          SCL: P11
+          SCL: P1
           VCC: VCC
           GND: GND
       oled_r:
@@ -467,6 +467,6 @@ pcbs:
           rotate: -270
         nets:
           SDA: P10
-          SCL: P11
+          SCL: P1
           VCC: VCC
           GND: GND
