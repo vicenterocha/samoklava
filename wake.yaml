@@ -418,7 +418,7 @@ pcbs:
         nets:
           from: GND
           to: RST
-      rotary:
+      rotary_l:
         type: rotary
         anchor:
           ref:
@@ -434,6 +434,20 @@ pcbs:
           D: ''
         params:
           reverse: true
+      rotary_r:
+        type: rotary
+        anchor:
+          ref:
+            - matrix_inner_bottom
+          shift: [22, -32]
+          rotate: -90
+        nets:
+          from: P16
+          to: enc_diode
+          A: P8
+          B: P9
+          C: GND
+          D: ''
       encoderdiode:
         type: diode
         anchor:
