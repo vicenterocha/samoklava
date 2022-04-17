@@ -25,7 +25,16 @@ points:
           from: =colrow
           to: =row_net
         anchor:
-          shift: [0, -5]
+          shift: [0, -6]
+      led_r:
+        type: rgb
+        params:
+          side: F
+        nets:
+          din: P1
+          dout: P2
+        anchor:
+          shift: [0, -3]
   zones:
     matrix:
       # anchor:
