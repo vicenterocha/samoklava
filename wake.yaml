@@ -123,21 +123,20 @@ outlines:
         points:
           - ref: matrix_ring_top
           - ref: matrix_ring_bottom
+            shift: [-2 (kx + px), -18]
           - ref: matrix_pinky_bottom
-            shift: [-0.5 (kx + px), 0]
           - ref: matrix_pinky_top
-            shift: [-0.5 (kx + px), 0]
     patch_inner:
       - type: polygon
         points:
           - ref: matrix_inner_top
-            shift: [1.6 (kx + px), 0]
+            shift: [1.6 (kx + px), 2]
           - ref: matrix_inner_bottom
-            shift: [1.6 (kx + px), -40]
+            shift: [1.6 (kx + px), -43]
           - ref: matrix_index_bottom
-            shift: [1 (kx + px), -38]
+            shift: [-2.3 (kx + px), -20]
           - ref: matrix_index_top
-            shift: [1.3 (kx + px), 5]
+            shift: [-2 (kx + px), 1]
     controller_area:
       main:
         type: rectangle
