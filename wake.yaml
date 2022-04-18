@@ -113,7 +113,6 @@ outlines:
           - ref: thumbfan_far_thumb
             shift: [0.5 kx - 0.5px, -0.3 ky -0.5 py]
           - ref: thumbfan_near_thumb
-            shift: [-0.5 kx + 0.5 px, -0.3 ky -1 py]
           - ref: matrix_pinky_bottom
             shift: [0.5 kx - 0.5 py, -0.3 ky -1 py]
           - ref: matrix_pinky_home
@@ -423,8 +422,8 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [22, -28]
-          rotate: -180
+          shift: [22, -30]
+          rotate: -90
         nets:
           from: P16
           to: enc_diode
