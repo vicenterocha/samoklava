@@ -437,7 +437,7 @@ pcbs:
           ref:
             - matrix_inner_bottom
           shift: [12, -17]
-          rotate: -90
+          rotate: -180
         nets:
           from: enc_diode
           to: P6
