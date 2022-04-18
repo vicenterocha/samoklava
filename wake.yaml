@@ -135,7 +135,7 @@ outlines:
           - ref: matrix_inner_bottom
             shift: [1.6 (kx + px), -40]
           - ref: matrix_index_bottom
-            shift: [1 (kx + px), -40]
+            shift: [1 (kx + px), -38]
           - ref: matrix_index_top
             shift: [1.3 (kx + px), 5]
     controller_area:
@@ -436,8 +436,8 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [21, -29]
-          rotate: 0
+          shift: [22, -30]
+          rotate: -90
         nets:
           from: P16
           to: enc_diode
