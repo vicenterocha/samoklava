@@ -32,14 +32,9 @@ points:
     matrix:
       key.padding: ky
       columns:
-        outter:
-          key:
-            stagger: 0 ky
-            spread: kx
-            column_net: col_outter
         pinky:
           key:
-            stagger: 0.1 ky
+            stagger: 0 ky
             spread: kx
             column_net: col_pinky
         ring:
@@ -64,39 +59,37 @@ points:
             column_net: col_inner
       rows:
         bottom:
-          row_net: P6
+          row_net: row_bottom
         home:
-          row_net: P5
+          row_net: row_home
         top:
-          row_net: P4
-        top_max:
-          row_net: P3
+          row_net: row_top
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
-        shift: [-2 kx, -1.5 ky]
+        shift: [-1.7 kx, -1 ky]
       columns:
         near:
           key:
             spread: kx
-            rotate: -10
-            origin: [0 kx, 0 ky]
+            splay: -1
+            origin: [-0.5 kx, -0.5 ky]
             column_net: col_middle
         home:
           key:
             spread: kx
-            rotate: -5
-            origin: [0 kx, -0.5 ky]
+            splay: -15
+            origin: [-0.5 kx, -0.5 ky]
             column_net: col_index
         far:
           key:
             spread: kx
-            rotate: -5
-            origin: [0 kx, -1 ky]
+            splay: -15
+            origin: [-0.5 kx, -0.5 ky]
             column_net: col_inner
       rows:
         thumb:
-          row_net: P7
+          row_net: row_thumb
 outlines:
   # board dimensions according to JLCPCB: 122.28 mm x 101.05 mm
   raw:
@@ -109,15 +102,15 @@ outlines:
     - what: polygon
       points:
         - ref: matrix_inner_bottom
-          shift: [0.5 kx + 0.5px, -0.5 ky + 10 py]
+          shift: [0.5 kx + 0.5px, -0.5 ky + 0.5 py]
         - ref: thumbfan_far_thumb
-          shift: [0.5 kx - 0.5px, 0.5 ky + 5 py]
+          shift: [0.5 kx + 1px, 0.6 ky + 0.6 py]
         - ref: thumbfan_far_thumb
-          shift: [0.5 kx - 0.5px, -0.3 ky -0.5 py]
+          shift: [0.5 kx - 0.5px, -0.5 ky - 0.5 py]
         - ref: thumbfan_near_thumb
-          shift: [-0.5 kx + 0.5 px, -0.3 ky -1 py]
+          shift: [-0.5 kx + 0.5 px, -0.5 ky - 0.5 py]
         - ref: matrix_pinky_bottom
-          shift: [0.5 kx - 0.5 py, -0.3 ky -1 py]
+          shift: [0.5 kx - 0.5 py, -0.5 ky - 0. py]
         - ref: matrix_pinky_home
         - ref: matrix_inner_home
   patch_outer:
@@ -133,18 +126,17 @@ outlines:
     - what: polygon
       points:
         - ref: matrix_inner_top
-          shift: [1.6 (kx + px), 0]
+          shift: [0.5 (kx + px), 0]
         - ref: matrix_inner_bottom
-          shift: [1.6 (kx + px), -40]
+          shift: [0.5 (kx + px), 0]
         - ref: matrix_index_bottom
-          shift: [1 (kx + px), -40]
         - ref: matrix_index_top
-          shift: [1.3 (kx + px), 5]
   controller_area:
     - what: rectangle
       where:
         - ref: matrix_inner_top
-          shift: [0 kx, -4.05 ky]
+          # re-tranalte to new anchor position
+          shift: [32/2 + 0 kx, 76.5/2 - 4.05 ky]
       size: [32, 76.5]
       corner: px
   switches:
@@ -185,11 +177,11 @@ outlines:
         - ref: matrix_inner_top
           shift: [-0.5 kx, 0]
       radius: 1.05
-    palm:
+    center:
       what: circle
       where:
-        - ref: matrix_index_bottom
-          shift: [0, -1.06 ky]
+        - ref: matrix_index_top
+          shift: [-9, -1.3 ky]
       radius: 1.05
     thumb:
       what: circle
@@ -205,7 +197,7 @@ outlines:
       radius: 2.05
     top_right:
       radius: 2.05
-    palm:
+    center:
       radius: 2.05
     thumb:
       radius: 2.05
@@ -277,7 +269,6 @@ pcbs:
           rotate: 270
         params:
           orientation: up
-          P3: row_top_max
           P4: row_top
           P5: row_home
           P6: row_bottom
@@ -287,7 +278,6 @@ pcbs:
           P18: col_middle
           P19: col_ring
           P20: col_pinky
-          P21: col_outter
       mcu_r:
         what: promicro
         where:
@@ -302,7 +292,7 @@ pcbs:
         where:
           ref:
             - matrix_inner_top
-          shift: [23, -18]
+          shift: [23, -6]
           rotate: 0
         params:
           front: true
@@ -316,7 +306,7 @@ pcbs:
         where:
           ref:
             - matrix_inner_top
-          shift: [23, -15]
+          shift: [23, -3]
           rotate: 0
         params:
           front: true
@@ -345,7 +335,7 @@ pcbs:
         where:
           ref:
             - matrix_inner_bottom
-          shift: [23.5, -4]
+          shift: [23.5, 0]
           rotate: 270
         params:
           side: B
@@ -356,7 +346,7 @@ pcbs:
         where:
           ref:
             - matrix_inner_bottom
-          shift: [23.5, -4]
+          shift: [23.5, 0]
           rotate: 270
         params:
           side: F
@@ -367,7 +357,7 @@ pcbs:
         where:
           ref:
             - matrix_inner_bottom
-          shift: [30, -4]
+          shift: [30, 0]
           rotate: 270
         params:
           side: F
@@ -379,7 +369,7 @@ pcbs:
         where:
           ref:
             - matrix_inner_bottom
-          shift: [30, -4]
+          shift: [30, 0]
           rotate: 270
         params:
           side: B
@@ -391,7 +381,7 @@ pcbs:
         where:
           ref:
             - matrix_inner_bottom
-          shift: [15, -4]
+          shift: [17, 0]
           rotate: 270
         params:
           from: GND
@@ -403,7 +393,7 @@ pcbs:
             - matrix_pinky_bottom
           shift: [0.75 kx, 0]
         params:
-          text: "wakeyb v2.0\\nby vicente"
+          text: "samoklava v0.3\\nby soundmonster"
           justify: left
       info_r:
         what: text
@@ -413,5 +403,5 @@ pcbs:
           shift: [0.75 kx, 0]
         params:
           layer: B.SilkS
-          text: "wakeyb v2.0\\nby vicente"
+          text: "samoklava v0.3\\nby soundmonster"
           justify: right mirror
