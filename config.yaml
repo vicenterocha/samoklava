@@ -64,6 +64,8 @@ points:
           row_net: row_home
         top:
           row_net: row_top
+        top_max:
+          row_net: row_top_max
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
@@ -269,6 +271,7 @@ pcbs:
           rotate: 270
         params:
           orientation: up
+          P3: row_top_max
           P4: row_top
           P5: row_home
           P6: row_bottom
