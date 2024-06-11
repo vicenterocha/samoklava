@@ -247,6 +247,17 @@ pcbs:
         outline: pcb
         layer: Edge.Cuts
     footprints:
+      oled:
+        what: oled
+        params:
+          side: "F"
+          SDA: P2
+          SCL: P3
+        where:
+          ref:
+            - matrix_inner_bottom
+          shift: [-6,-19]
+          rotate: 90
       choc_hotswap:
         what: choc
         where:
