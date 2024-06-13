@@ -12,15 +12,15 @@ units:
 points:
   key:
     footprints:
-      choc_hotswap:
-        type: choc
-        params:
-          hotswap: true
-          reverse: true
-          keycaps: true
-        nets:
-          from: =colrow
-          to: =column_net
+#      choc_hotswap:
+#        type: choc
+#        params:
+#          hotswap: true
+#          reverse: true
+#          keycaps: true
+#        nets:
+#          from: =colrow
+#          to: =column_net
       mx_hotswap:
         type: mx
         params:
