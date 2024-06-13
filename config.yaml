@@ -21,6 +21,15 @@ points:
         nets:
           from: =colrow
           to: =column_net
+      mx_hotswap:
+        type: mx
+        params:
+          hotswap: true
+          reverse: true
+          keycaps: true
+        nets:
+          from: =colrow
+          to: =column_net
       diode:
         type: diode
         nets:
@@ -260,6 +269,17 @@ pcbs:
           rotate: 90
       choc_hotswap:
         what: choc
+        where:
+          - /matrix_.*/
+          - /thumbfan_.*/
+        params:
+          hotswap: true
+          reverse: true
+          keycaps: true
+          from: "{{colrow}}"
+          to: "{{column_net}}"
+      mx_hotswap:
+        what: mx
         where:
           - /matrix_.*/
           - /thumbfan_.*/
